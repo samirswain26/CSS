@@ -1,0 +1,30 @@
+/* p{
+    text-align: end;
+} */
+
+
+/* Font Decoration */
+h1 {
+    text-align: center;
+    text-decoration: blue dashed underline;
+}
+
+/* Font Family & Font Weight */
+#two {
+    text-align: start;
+    font-weight: 100;
+    font-family: Arial;
+}
+
+
+/* units in css means the digits to fix the size of a text */
+a {
+    font-size: 25px;
+    text-decoration: none ;
+}
+
+#three {
+    line-height: 60px;  /*line height between two lines*/
+    font-size: 25px;
+    text-transform: capitalize; /*It used to transform the content of text into uppercase, lowercase, capitalize or none.*/
+}

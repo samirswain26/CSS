@@ -1,0 +1,30 @@
+/* Lastly written stle will apply first in css. */
+
+
+/* Universal Selector */
+*{
+    color: red;
+
+    /* "*" known as asterisk, it styles to to each tags in html. */
+}
+
+
+/* Element Selector */
+h1{
+    color: green;
+    /* It chamges the color of h1 tags present in the html. */
+}
+
+
+/* Id Selector (Hash symbol(#))*/
+#a{
+    color: blue;
+/* Id selector is a unique identity or unique name. */
+}
+
+
+/* Class Selector (Dot Symbol(.))*/
+.one{
+    color:brown;
+    /*To add multiple elements in a same class, we assign them same class rather than id.*/
+}
