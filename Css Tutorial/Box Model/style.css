@@ -1,0 +1,23 @@
+div {
+    background-color: yellow;
+    height: 250px; /* Height for the content area.*/
+    width: 200px;  /* Width for the content area.*/
+
+    /* Border is used to set an elements border.
+    To set a borfer we set basic three components i.e, 1)border-width  2)Border-style 3)Border-color
+    The combination if the three properties that makes a single propety known as Border. */
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px; /*we can make a circle by take the same height and width and border-radius=50% -*/
+    padding: 10px 20px 30px 40px; /*Padding is space between elements imside the element.*/
+    margin: 100px 100px 100px 100px; /*Margin is the space between two elements from outside*/ 
+}
+
+h1 {
+    width: 200px;
+    height: 70px;
+    background-color: aquamarine;
+    border: 3px solid red;
+    text-decoration: underline;
+}
