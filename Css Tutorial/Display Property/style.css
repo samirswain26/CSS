@@ -1,0 +1,24 @@
+#one {
+    background-color: red;
+}
+#two {
+    background-color: green;
+    visibility: hidden; /* the visibility property hoden the content from the document but the space is reserved*/
+}
+#three {
+    background-color: blue;
+}
+
+
+/* There are four diplay properties 
+1. Inline- Takes only space required by the element (no padding/margine). 
+2. Block- takes full space available in width. And a block element starts with another line.
+3. Inline-block- Similar to inline-block but we can set margin and padding.
+4. None- To remove element element from the document. In display none there is no space reserved for the that element.*/
+div {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
