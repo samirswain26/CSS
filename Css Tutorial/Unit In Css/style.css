@@ -1,0 +1,16 @@
+#box1 {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    font-size: 10px;
+}
+#box2 {
+    width: 30%;
+    background-color: rgb(3, 4, 0);
+    margin-left: 10%; /* % (Percentage) it is defined as the relative size of an elemnet's parent oblect.. */
+    font-size: 2em; /* 'em' Indicates that it increse the font-size by multiply the times of "em" in the parent font-size.*/
+    width: 7em; /* In width if we use em, then it will increase the size of the width by multiply 7 times to the font-size of this particular class (in this case child class).*/
+    height: 5rem; /*rem(Root em) is used to manage the size of that particular element to the root os that tag's font size. it can be the body tag head tag in html. */
+    height: 50vh;/*vh(View Port) is used to set the height of the element according to the screen size that we are able to see in the web page.*/
+    color: white;
+} 
