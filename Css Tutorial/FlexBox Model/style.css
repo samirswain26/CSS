@@ -1,0 +1,136 @@
+body {
+    text-align: center;
+}
+
+/* Note in container 1 the main-axis is in the row side that is from left to right. If we use use align-content : flex-start then it is the cross-axis */
+#container {
+    height: 600px;
+    width: 400px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row; /* Flex-direction is used to sets how items are placed in the flex container. General flex-directions are Row, Row-reverse(In reverse direction the elements are stored in the reverse order like 4,3,2,1.),  column, Column-reverse */
+    justify-content: center; /*Flex container fit the elements in it according to the containers size if the actual size of the element is more than the container. *//* Justify-content allignment along the main axis. It has few types-
+    flex-start : start the flex according to main axis. If the main axis is row then is starts from the left to right.
+    flex-end : It end in the main axis. But doesn't reverse the order of the elements. It shifts the box to the right end of the container.
+    flex-center : It shifts the elements of main axis to the center.
+    space-around : It create a space around the elements if there is extra space in the container.
+    space-between, space-evenly , center.*/
+    flex-wrap: wrap; /*Flex-wrap is used to control whether the flex container's items should wrap onto multiplelines when there isn't enough space in a single line.*/
+    align-content: flex-start; /*The align-content is in the cross-axis. The flex-start property makes the elements in the top position of the content row side respectively. When the allign content is in center then the whole content is in the center part of the container. */
+    
+}
+
+div {
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    border: 3px solid black;
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: aquamarine;
+    height: 100px;
+}
+
+#box3 {
+    background-color: brown;
+    height: 70px;
+}
+
+#box4 {
+    background-color: blue;
+}
+
+#box5 {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* this part is for align-item flex-propety for container2 */
+#box {
+    height: 600px;
+    width: 400px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap; /*Flex-wrap is used to control whether the flex container's items should wrap onto multiplelines when there isn't enough space in a single line.*/
+    /* align-content: flex-start; /*The align-content is in the cross-axis. The flex-start property makes the elements in the top position of the content row side respectively. When the allign content is in center then the whole content is in the center part of the container. */
+    align-items: flex-start;  /*align-item : flex-start creates a wrap gap between them while in the container1 the align-content:flex-start remove the gap betweemn them. */
+}
+
+#box6 {
+    background-color:coral;
+}
+
+#box7 {
+    background-color:chartreuse;
+    height: 100px;
+    align-self: flex-end;  /* Align-self is used to align the particular item in the content. In this case the box 7 is aligned to its own line end portion. Align-self has the higher priority than other flex properties.*/
+}
+
+#box8 {
+    background-color:tomato;
+    height: 70px;
+}
+
+#box9 {
+    background-color:steelblue;
+    
+}
+
+#box10 {
+    background-color:skyblue;
+    align-self: flex-end;
+}
+
+
+
+
+#secondbox {
+    height: 300px;
+    width: 600px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#box11 {
+    background-color:coral;
+    width: 100px;
+}
+
+#box12 {
+    background-color:chartreuse;
+    width: 100px;
+    flex-shrink: 0; /*flex-shrink is used to shrink the item according to the other items present in the conatiner. It depend upon the factor how much the factor is used in shrink.If the container's width is large than the arithmatic sum of the components in the container the the shrink will not work. In that case the flex-grow is used. */
+}
+
+#box13 {
+    background-color:tomato;
+    height: 70px;
+    width: 100px;
+    flex-grow: 1; /*flex-grow is used to expand the flex by increasing the width and heith as well. The value=1 indicates that the grow will be in one time for the elements.*/
+}
+
+#box14 {
+    background-color:steelblue;
+    width: 100px;
+    flex-grow: 2; /*Flex-grow:2 ; means it will increase the part by twice incrteasing the value according to the space. And the value 2 indicates that it was almost twice as compare to the 1. */
+}
+
+#box15 {
+    background-color:skyblue;
+    width: 100px;
+}
