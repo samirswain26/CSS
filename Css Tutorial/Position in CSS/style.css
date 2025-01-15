@@ -1,0 +1,52 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+/* Position css property sets how an elements is positioned in a document.
+position - ststic / relative / absolute / fixed / sticky.
+position proprties - top / right / bottom / left / z-index (These properties is used to set the element from that side.)
+*/
+
+#box1 {
+    position: static;    /* in static there is no effect of position properties. */
+    top: 30px;
+    bottom: 60px;
+}
+
+#box2 {
+    position: relative; /* The element relative to itself. It changes according to the actual postion of the element itself. */
+    top: 60px;
+    left: 30px;
+}
+
+#box3 {
+    position: absolute;  /* Position relative to its closest postioned ancestor(ancestor is the tag containing the element in it). In this case the positione ancestor is the body tag. */
+    top: 10px;
+    right: 12px;
+
+}
+
+#box4 {
+    position: fixed;  /* Position relative to the browser. It fixed according to the browser. Remove from flow. It used at footer and header.*/
+    bottom: 0;
+    width: 100vw;
+    right: 0px;
+}
+
+#box5 {
+    position: sticky; /*It sticks to the document(browser) when it comes to its actual position.*/
+    top: 5px;
+    left: 700px;
+}
+
+
+#box6 {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    z-index: -2; /* Z-index decides the stack level of elements. It is used to overlap the element with larger z-index cover those with a smaller one.*/
+}
