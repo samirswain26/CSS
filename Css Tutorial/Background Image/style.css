@@ -1,0 +1,22 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+#box1 {
+    background-image: url("dog_photo.jpg");
+    background-size: cover; /*Cover represents that their is no space left behinf and the image is fit into it. */
+}
+
+#box2 {
+    background-image: url("dog_photo.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+body{
+    background-image: url("dog_photo.jpg");
+    background-size: cover;
+}
